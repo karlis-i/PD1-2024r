@@ -1,0 +1,238 @@
+:root {
+	--text-main: #212121;
+	--font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--font-heading: 'Chakra Petch', cursive;
+	--color-gray: #f0f0f0;
+	--white: #fff;
+	--black: #000000;
+	--color-darkgray: #7a7a7a;
+	--text-orange: #F47B22;
+}
+
+main{
+	
+	
+}
+
+img{
+	transition: transform .2s;
+    
+    margin:0 auto;
+    background-color: rgb(173, 173, 237);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+img:hover{
+    transform:scale(1.05);
+}
+
+div{
+	display:block;
+}
+
+main p{
+	text-align: justify;
+}
+
+header p.lead {
+	font-size: 2rem;
+	font-weight: bold;
+	
+} 
+
+header p.sub {
+	font-size: 1.5rem;
+	
+	opacity: 0.40; 
+}
+
+footer p.meow{
+	font-size: 1.5rem;
+	opacity: 0.4;
+}
+
+.related-panel h3 {
+	text-align: center;
+}
+
+.related-panel img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+}
+
+.container {
+	padding: 0 0.5rem; 
+}
+
+.container {
+	display: block;
+	width: 992px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+/* flexbox */
+.flexbox-columns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: stretch;
+} 
+
+.flexbox-columns > article {
+	flex: 2;
+}
+ 
+.flexbox-columns > aside {
+	flex: 1; 
+}
+
+/* grid container */ 
+.related-content { 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 1rem; row-gap: 1rem;
+} 
+.related-panel img { 
+	height: 370px; 
+}
+
+#container3D canvas {
+	width: 28vw !important;
+	height: 28vh !important;
+	position: relative;
+	top: 0;
+	left: 0;
+  }
+
+figure{
+	
+	
+	margin: 0;
+	position: relative;
+}
+
+figure div{
+	display: block;
+	width: 100%;
+}
+
+article figure figcaption {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: var(--white);
+	font-family: var(--font-heading);
+}
+
+table {
+	border-collapse: collapse;
+	border: 1px solid var(--color-darkgray);
+	font-family: var(--font-heading)
+}
+
+table tr:hover td {
+	background-color: var(--text-orange);
+	color: var(--white); 
+}
+
+table tr th, table tr td {
+	border-bottom: 1px solid var(--color-darkgray);
+	
+	padding: 0.25rem 0.5rem;
+} 
+
+
+table tr:nth-of-type(odd) td {
+	background-color: var(--color-gray); 
+}
+
+header{
+	background: rgb(185,185,185);
+	background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(241,241,241,1) 85%, rgba(255,255,255,1) 100%);
+	padding: 0.3rem 0;
+}
+
+nav {
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(241,241,241,1) 15%, rgba(185,185,185,1) 100%);
+	padding: 1rem;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+}
+
+nav ul li::after {
+	content: "|";
+}
+
+nav ul li:last-child::after {
+	content: "";
+}
+
+nav ul li a {
+	color: var(--text-orange); 
+}
+
+footer{
+	background: rgb(185,185,185);
+	background: linear-gradient(90deg, rgba(185,185,185,1) 0%, rgba(241,241,241,1) 85%, rgba(255,255,255,1) 100%);
+	color: var(--black);
+	padding: 0.3rem 0;
+}
+
+header p, footer p {
+	margin: 0;
+	font-family: var(--font-heading);
+}
+
+h1,h2,h3 {
+	font-family: var(--font-heading);
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+* {
+		box-sizing: border-box;
+} 
+html {
+	font-family: var(--font-default);
+	font-size: 14px;
+	color: var(--text-main);
+	line-height: 1.5;
+} 
+body {
+	
+	margin: 0;
+  	padding: 0;
+  	background: rgb(190,190,190);
+	background: radial-gradient(circle, rgba(190,190,190,1) 0%, rgba(244,244,244,1) 100%);
+  	min-height: 100vh; /* Ensures background covers full height */
+}
+
+@media screen and (min-width: 992px) {
+	html {
+		font-size: 16px;
+	} 
+	main {
+		padding: 0; 
+	}
+}
