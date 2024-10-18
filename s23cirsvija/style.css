@@ -1,0 +1,346 @@
+:root{
+    --background-neutral-dark-gray: #2e2e2e;
+    --text-main:#d9d9d9;
+    --text-yellow-heading: #d8b15a;
+    --text-pastel-yellow:#E3C88A;
+    --accent-yellow: #e5bf40;
+    --nav-dark-green-gray: #394842;
+    --table-heading-gray: #525152;
+    --table-odd-gray:#3b3b3b;
+    --table-lines-gray:#626262;
+    --muted-white: #f5f5f5;
+    --translucent-black:rgba(0, 0, 0, 0.5);
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+                    Helvetica, Arial, sans-serif, "Apple Color Emoji", 
+                    "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-heading: "Libre Baskerville", serif;                               
+}
+
+* {
+    box-sizing:border-box; /* Box sizing rule for every element. */
+}
+
+html{
+    font-family:var(--font-default);
+    font-size: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+    background-color: var(--background-neutral-dark-gray);
+}
+
+body{
+    margin: 0;
+}
+
+h1, h2 , h3{
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--text-yellow-heading);
+}
+
+h1{
+    font-size: 2.75rem;
+    margin-bottom: 0;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+}
+
+section h2{
+    margin-top: 4rem;
+}
+
+h3{
+    font-size: 1.25rem;
+    color: var(--text-pastel-yellow);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+/*Tutorial used:*/
+/*https://www.w3schools.com/cssref/pr_background-image.php*/
+header, footer {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/54/Monet_w1896.jpg");
+    background-color: var(--nav-dark-green-gray); /* If the image does not display, the solid color will replace it. */
+    background-size: cover;
+    background-position: center; 
+    color: var(--muted-white);
+    padding: 4rem 0.5rem; 
+    position: relative;
+}
+
+/*Tutorial used:*/
+/*https://css-tricks.com/7-practical-uses-for-the-before-and-after-pseudo-elements-in-css/*/
+header::before, footer::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Used together with 'absolute' to align to all sides(top, bottom, left, right). */
+    background-color: var(--translucent-black);
+    z-index: 1; /* Stacks the gradient on top of the image but below text. */
+}
+
+header p, footer p{
+    position: relative;
+    z-index: 2; /* Stacks the text on top of the image and overlay layer. */
+    margin: 0;
+    font-family: var(--font-heading);
+}
+
+header p.lead{
+    font-size: 2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+header p.sub{
+    font-size: 1.5rem;
+    opacity: 0.35;
+    text-shadow: 2px 2px 4px var(--translucent-black); /* Horizontal Offset, Vertical Offset, Blur radius */
+}
+
+footer p.leadf{
+    font-size: 1rem;
+    font-variant: small-caps;
+}
+
+footer p.subf{
+    font-size: 0.75rem;
+    opacity: 0.75;
+    text-shadow: 2px 2px 4px var(--translucent-black); 
+}
+
+nav{
+    background-color: var(--nav-dark-green-gray);
+    color: var(--text-yellow-heading);
+    padding: 1rem;
+}
+
+nav ul{
+    margin: 0; /* Removes padding and spacing for list elements. */
+    padding: 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li::after{
+    content: "|";
+    color: var(--text-main);
+}
+
+nav ul li:last-child::after {
+    content: "";
+}
+
+nav ul li a{
+    color: var(--text-main);
+}
+
+main p {
+    text-align: justify;
+}
+
+.related-panel h3{
+    text-align: center;
+}
+
+.related-panel img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+figure {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+figure img{
+    display: block;
+    width: 100%;
+}
+
+figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display:block;
+    width: 100%;
+    padding: 0.25rem 0.5rem;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--text-main);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+table{
+    border-collapse: collapse;
+    border: 1px solid var(--table-lines-gray);
+    width: 100%;
+}
+
+table th, table td{
+    border-width: 0;
+}
+
+table tr th, table tr td{
+    border-bottom: 1px solid var(--table-lines-gray);
+    border-right: 1px solid var(--table-lines-gray);
+    padding: 0.25rem 0.5rem;
+}
+
+table tr th:last-child, table tr td:last-child{
+    border-right: none;
+}
+
+table tr:last-child th, table tr:last-child td{
+    border-bottom: none;
+}
+
+table tr th{
+    text-align: left;
+    background-color: var(--table-heading-gray);
+    color: var(--white);
+}
+
+table tr:nth-of-type(odd) td{
+    background-color: var(--table-odd-gray);
+}
+
+
+.container{  /* Side padding for mobile view. */
+    padding: 0 0.5rem;
+}
+
+.related-panel figure {
+    margin: 1rem 0;     /* Gives space below and above the pictures. */
+    position: relative;
+}
+
+section a{
+    color: var(--text-yellow-heading); /* Colors the link in the text. */
+}
+
+.related-lilies figure{ /* Gives spacing in between lily pictures (mobile view). */
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none; /* Removes underlining from all links */
+}
+
+
+
+@media screen and (min-width: 992px){
+    html{
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0;
+    }
+    
+    .container{
+        display: block;
+        width: 992px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    /* FLEXBOX */
+    /* Switched the aside elements. Instead of table there is a picture. */
+    .flexbox-columns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+        gap: 1.5rem; /* Increases the gap between text and image */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: stretch;
+      }
+      
+    .flexbox-columns > article {
+        flex: 2; /* Text takes more space. */
+      }
+      
+    .flexbox-columns > aside {
+        flex: 1; /* Image takes less space. */
+    }
+      
+      aside img {
+        width: 100%;
+        height: auto;
+      }
+      
+      aside figure {
+        text-align: center;
+        margin: 0;
+        margin-top: 7.4rem; /* Making the picture and text at the same level. */
+      }
+
+    /* Grid Container for artworks. */
+    .related-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+        justify-items: center;
+    }
+
+    .related-panel h3{
+        text-align: center;
+        height: 60px;
+        align-items: center;
+        font-size: 1.25rem;
+        margin: 0;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .related-panel img{
+        height: 330px;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    img{
+        transition: transform 0.3s ease;
+    }
+
+    img:hover{
+    transform: scale(1.05); /* Slightly enlarges the image. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+
+    figure:hover figcaption{
+    opacity: 0; /* Makes the figcaption disappear. */
+    transition: opacity 0.3s ease;
+    }
+
+    table tr:hover td{
+        background-color: var(--accent-yellow);
+        color: var(--background-neutral-dark-gray);
+    }
+
+    nav ul li a:hover {
+        color: var(--accent-yellow);
+    }
+
+    section a:hover{
+        color: var(--text-pastel-yellow);
+    }
+}
