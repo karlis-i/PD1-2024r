@@ -1,0 +1,173 @@
+:root {
+  --text-main: #333;
+  --text-secondary: #0066cc;
+  --bg-header: #0a1a2b;
+  --bg-footer: #1a1a1a;
+  --bg-light-gray: #f5f5f5;
+  --font-heading: 'Georgia', serif;
+  --font-body: 'Arial', sans-serif;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-light-gray);
+}
+
+header, footer {
+  padding: 3rem 0;
+  color: var(--white);
+  text-align: center;
+}
+
+header {
+  background-color: var(--bg-header);
+}
+
+footer {
+  background-color: var(--bg-footer);
+  margin-top: 3rem;
+}
+
+.header-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header p, footer p {
+  margin: 0;
+}
+
+header p.lead {
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: var(--font-heading);
+}
+
+header p.sub {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+header p.author-year {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+nav {
+  background-color: var(--bg-light-gray);
+  color: var(--text-secondary);
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 0.75rem;
+}
+
+nav ul li a {
+  color: var(--text-secondary);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-family: var(--font-heading);
+  color: var(--text-main);
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+}
+
+main p {
+  text-align: justify;
+}
+
+.flexbox-columns {
+  display: flex;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.flexbox-columns > article {
+  flex: 3;
+}
+
+.flexbox-columns > aside {
+  flex: 2;
+  background-color: #fff;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car-logo {
+  width: 160px;
+  display: block;
+  margin: 1rem 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table th {
+  background-color: var(--text-secondary);
+  color: var(--white);
+}
+
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .flexbox-columns {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .header-content, nav ul li {
+    text-align: center;
+  }
+}
