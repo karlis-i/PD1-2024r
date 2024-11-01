@@ -1,0 +1,158 @@
+:root {
+  --text-main: #333333;
+  --text-secondary: #0066cc;
+  --bg-header: #003366;
+  --bg-footer: #1a1a1a;
+  --bg-light-gray: #f2f2f2;
+  --white: #ffffff;
+  --font-primary: 'Arial', sans-serif;
+  --font-secondary: 'Georgia', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-light-gray);
+}
+
+header, footer {
+  padding: 3rem 0;
+  color: var(--white);
+  text-align: center;
+}
+
+header {
+  background-color: var(--bg-header);
+}
+
+footer {
+  background-color: var(--bg-footer);
+  margin-top: 3rem;
+}
+
+header p, footer p {
+  margin: 0;
+  font-family: var(--font-secondary);
+}
+
+header p.lead {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+header p.sub {
+  font-size: 1.2rem;
+  font-style: italic;
+  opacity: 0.75;
+}
+
+nav {
+  background-color: var(--bg-light-gray);
+  color: var(--text-secondary);
+  padding: 1rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline;
+  margin: 0 0.5rem;
+}
+
+nav ul li a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-family: var(--font-secondary);
+  color: var(--text-main);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+}
+
+main p {
+  text-align: justify;
+}
+
+.flexbox-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+.flexbox-columns > article {
+  flex: 2;
+}
+
+.flexbox-columns > aside {
+  flex: 1;
+}
+
+.car-logo {
+  width: 150px;
+  height: auto;
+  margin: 1rem 0;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid var(--bg-footer);
+  width: 100%;
+}
+
+table th, table td {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--bg-footer);
+  text-align: left;
+}
+
+table tr:nth-of-type(odd) {
+  background-color: var(--bg-light-gray);
+}
+
+table tr th {
+  background-color: var(--text-secondary);
+  color: var(--white);
+}
+
+a {
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 18px;
+  }
+}
