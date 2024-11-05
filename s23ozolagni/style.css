@@ -18,7 +18,9 @@
 
     header, footer {
         padding: 15px;
+        width: 100%;
         text-align: center;
+        box-sizing: border-box;
     }
 
     nav ul li {
@@ -29,10 +31,26 @@
     table, th, td {
         font-size: 100%; 
     }
+    table{
+        min-width: 330px;
+        overflow-x: auto;
+        width: 100%;
+        display: block;
+        border-collapse: collapse;
+    }
 
     .image-comparison img {
         width: 45%; 
     }
+    iframe{
+        width: 100%;
+    }
+}
+
+img {
+    height: auto;
+    max-width: 350px;
+    width: 80%;
 }
 
 
