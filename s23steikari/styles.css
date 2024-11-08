@@ -1,66 +1,118 @@
+:root {
+    --text-main: #212121;
+    --bg-pink: #ffc0cb;
+    --bg-hover: #f3d7ca;
+    --nav-hover: #f1aedb;
+    --border-hotpink: #ff69b4;
+
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+
+    --font-heading: 'Merriweather', cursive;
+
+}
+
+
 * {
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-   
+}
+
+html {
+    font-family: var(--font-default);
+    font-size: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--font-heading);
+}
+
+header {
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    background-image: url("https://media.istockphoto.com/id/1064140298/vector/pale-pink-stripes-seamless-pattern.jpg?s=612x612&w=0&k=20&c=q2Rc4z4lYGHMpIQTOI4ZiawaijPS8JE166REQ9h679U=");
+
+}
+
+header p.lead {
+    font-size: xx-large;
+    font-family: var(--font-heading);
+
+    width: auto;
+    margin: auto
+}
+
+header p.sub {
+    opacity: 0.33;
 }
 
 nav {
     position: sticky;
     top: 0;
     overflow: hidden;
+    background-color: var(--bg-pink);
 }
+
+nav a:hover {
+    background-color: var(--nav-hover);
+    color: black;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.pictures {
+    display: flex;
+    flex-direction: row;
+
+}
+
+img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: transform .2s;
+
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
 
 body {
     /*background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) );*/
-    background-image: url("https://static.vecteezy.com/system/resources/previews/029/242/603/non_2x/modern-white-gradient-banner-with-abstract-shapes-vector.jpg");
+    
+    background: linear-gradient(109deg, rgba(255,255,255,1) 0%, rgba(255,245,254,1) 35%, rgba(251,180,240,1) 100%);
     background-size: auto;
-}
-
-.center {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+    margin: 0;
 
 }
-
-.carousel {
-    width: 40%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #f3d7ca;
-    border-radius: 5%;
-}
-
-.img-left {
-    display: float;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    transition: transform .2s;
-    clip-path: circle(40%)
-}
-
-
-
-#starter-pic {
-
-    transition: transform .2s;
-    clip-path: circle(40%)
-}
-
-.drop-shadow {
-
-    filter: drop-shadow(10px 5px rgb(255, 194, 203));
-
-
-}
-
-
 
 .text-center {
     text-align: center;
@@ -69,116 +121,86 @@ body {
 table,
 th,
 td {
-    border: 4px solid;
+    border: 2px solid;
     table-layout: auto;
     margin-left: auto;
     margin-right: auto;
-    border-color:hotpink;
-   
+    border-color: var(--border-hotpink);
+
 }
- tr:hover{
-    background-color: #f3d7ca;
- }
-table{
+
+tr:hover {
+    background-color: var(--bg-hover);
+}
+
+table {
     width: 50%
 }
 
-.card-body {
-    background-image: linear-gradient(to left, white, #8014148c);
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    
-
+.card h5 {
+    text-align: center;
 }
 
+.card img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+}
 
 .container-fluid {
     display: flex;
     justify-content: center;
 }
 
-
-.card {
-    transition: transform .2s;
-    margin-bottom: 30px;
-    
-}
-
-.card:hover {
-    transform: scale(1.1);
-}
-
-.card-text {
-    text-align: justify;
-}
-
-.nav-item:hover {
-    background-color: rgba(143, 54, 61, 0.445);
-
-}
-
 .header-style {
     margin-left: 10px;
 }
 
-
-section {
-    background-color: rgba(78, 10, 16, 0.212);
+.related-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 1rem;
 }
 
-.left {
-    display: flex;
-    margin-left: 2%;
-    margin-right: auto;
-    width: 30%;
+.related-panel img {
+    height: 300px;
+    width: 300px;
 }
 
-.text-left {
-    text-align: left;
-    margin-left: 1%;
-    font-family: "Times New Roman", Times, serif;
-}
 
-.text-right {
-    text-align: right;
-    display: flex;
-    margin-left: 1%;
-    font-family: "Times New Roman", Times, serif;
+.card p {
+    text-align: justify;
 }
 
 tr:nth-child(even) {
     background: linear-gradient(to right, rgb(238, 156, 167), rgb(255, 221, 225));
 }
 
+@media screen and (min-width: 992px) {
 
-#starter-pic:hover {
-    transform: scale(1.05);
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0;
+    }
+
 }
 
-
-.img-left:hover {
-    transform: scale(1.05);
-}
-header{
-
-    background-image: url("https://media.istockphoto.com/id/1064140298/vector/pale-pink-stripes-seamless-pattern.jpg?s=612x612&w=0&k=20&c=q2Rc4z4lYGHMpIQTOI4ZiawaijPS8JE166REQ9h679U=");
-}
-p.display-6,
-p.lead,
-header {
-    
-    width: auto;
-    margin: auto
-}
-
-
-#rectangle {
-    width: auto;
-    height: 200px;
-    align-items: center;
-    background-color: rgba(78, 10, 16, 0.2);
-    margin-top: auto;
+.container {
     display: block;
+    width: 992px;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    padding: 0;
+}
+
+footer{
+    background-color: var(--bg-pink);
+    
+    overflow: hidden;
 }
