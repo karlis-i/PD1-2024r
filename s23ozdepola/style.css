@@ -1,0 +1,99 @@
+:root {
+    --text-main: #e0e0e0;
+    --text-green: #00a65a;
+    --text-orange: #ff8c00;
+    --white: #ffffff;
+    --bg-light-gray: #2c2c2c;
+    --bg-dark-gray: #1a1a1a;
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --font-heading: 'Grandstander', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-default);
+    font-size: 14px;
+    color: var(--text-main);
+    background-color: var(--bg-dark-gray);
+}
+
+header, footer {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--text-green);
+    padding: 2rem 0;
+}
+
+header p.lead {
+    font-size: 2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+header p.sub {
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background-color: var(--bg-light-gray);
+}
+
+nav a {
+    color: var(--text-orange);
+    text-decoration: none;
+}
+
+.container {
+    padding: 1rem;
+}
+
+.crypto-logo {
+    width: 120px;
+    height: auto;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.related-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.related-panel img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 0.5rem;
+    border: 1px solid var(--bg-light-gray);
+}
+
+table th {
+    background-color: var(--text-green);
+    color: var(--white);
+}
+
+table tr:nth-of-type(odd) td {
+    background-color: var(--bg-light-gray);
+}
