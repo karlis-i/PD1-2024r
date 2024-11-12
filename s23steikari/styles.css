@@ -33,7 +33,7 @@ h4 {
 }
 
 header {
-    padding: 5px;
+
     text-align: center;
     font-size: 20px;
     background-image: url("https://media.istockphoto.com/id/1064140298/vector/pale-pink-stripes-seamless-pattern.jpg?s=612x612&w=0&k=20&c=q2Rc4z4lYGHMpIQTOI4ZiawaijPS8JE166REQ9h679U=");
@@ -50,6 +50,7 @@ header p.lead {
 
 header p.sub {
     opacity: 0.33;
+    margin-bottom: 0;
 }
 
 nav {
@@ -107,8 +108,8 @@ img:hover {
 
 body {
     /*background: linear-gradient(179.4deg, rgb(253, 240, 233) 2.2%, rgb(255, 194, 203) );*/
-    
-    background: linear-gradient(109deg, rgba(255,255,255,1) 0%, rgba(255,245,254,1) 35%, rgba(251,180,240,1) 100%);
+
+    background: linear-gradient(109deg, rgba(255, 255, 255, 1) 0%, rgba(255, 245, 254, 1) 35%, rgba(251, 180, 240, 1) 100%);
     background-size: auto;
     margin: 0;
 
@@ -140,15 +141,6 @@ table {
 .card h5 {
     text-align: center;
 }
-
-.card img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-
-}
-
 .container-fluid {
     display: flex;
     justify-content: center;
@@ -159,15 +151,22 @@ table {
 }
 
 .related-content {
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1rem;
     row-gap: 1rem;
 }
 
 .related-panel img {
-    height: 300px;
-    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+}
+
+
+p {
+    padding: 10px;
 }
 
 
@@ -179,28 +178,43 @@ tr:nth-child(even) {
     background: linear-gradient(to right, rgb(238, 156, 167), rgb(255, 221, 225));
 }
 
+footer {
+    background-color: var(--bg-pink);
+
+    overflow: hidden;
+}
+
 @media screen and (min-width: 992px) {
 
     html {
         font-size: 16px;
     }
 
+
+    .container {
+        display: block;
+        width: 992px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
     main {
         padding: 0;
     }
 
-}
+    .related-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+    .related-content img{
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-.container {
-    display: block;
-    width: 992px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0;
-}
-
-footer{
-    background-color: var(--bg-pink);
-    
-    overflow: hidden;
 }
