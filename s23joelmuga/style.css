@@ -79,7 +79,7 @@ nav ul {
     }
 
         nav ul li::after {
-            content: " ⚓";
+            content: "\2693";
             margin-left: 0.5rem;
             color: var(--text-green);
         }
