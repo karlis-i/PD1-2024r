@@ -1,0 +1,234 @@
+:root {
+    --text-main: #212121;
+    --text-green: #0B2205;
+    --white: #fff;
+    --purple: #511B51;
+    --light-purple: #E4B9E4;
+    --bg-light-gray: #ececec;
+    --bg-dark-gray: #4c4c4e;
+    --lighter-purple: #cb42bf;
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-heading: 'Prociono', cursive; /* Corrected font-family and added to existing styles */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-default);
+    font-size: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+main {
+    padding: 0 0.5rem;
+}
+
+main p {
+    text-align: justify;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--text-green);
+}
+
+section h2 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+.prociono-regular {
+    font-family: "Prociono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--text-green);
+    background: linear-gradient(135deg, #007b4d 0%,#002e1e 100%); 
+    color: var(--white);
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: var(--bg-dark-gray);
+    color: var(--white);
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+header p, footer p {
+    margin: 0;
+    font-family: var(--font-heading); 
+}
+
+header p.lead {     
+    font-size: 2rem;     
+    font-weight: bold;     
+    font-variant: small-caps; 
+}  
+
+header p.sub {
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.33;
+} 
+
+nav {
+    background-color: var(--bg-light-gray);
+    color: var(--text-green);
+    padding: 1rem;
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li::after {
+    content: "\1F4CC";
+    margin: 0 10px;
+}
+
+nav ul li:last-child::after {
+    content: "";
+}
+
+nav ul li a {
+    color: var(--text-main);
+}
+
+.related-panel h3 {
+    text-align: center;
+}
+
+.related-panel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+figure {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    font-family: var(--font-heading);
+}
+
+table { 
+    border-collapse: collapse; 
+    border: 1px solid var(--bg-dark-gray); 
+    width: 100%;
+    text-align: center;
+} 
+
+table th, table td { 
+    border-width: 0; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+table tr th, table tr td { 
+    border-bottom: 1px solid var(--bg-dark-gray); 
+    border-right: 1px solid var(--bg-dark-gray); 
+    padding: 0.25rem 0.5rem; 
+} 
+
+table tr th:last-child, table tr td:last-child { 
+    border-right: none; 
+} 
+
+table tr:last-child th, table tr:last-child td { 
+    border-bottom: none; 
+} 
+
+table tr th { 
+    text-align: center; 
+    vertical-align: middle;
+    background-color: var(--purple); 
+    color: var(--white); 
+    font-weight: bold;
+} 
+
+table tr:nth-of-type(odd) td { 
+    background-color: var(--light-purple); 
+} 
+
+@media screen and (min-width: 992px) {
+    .container { 
+        display: block; 
+	width: 992px; 
+	margin-left: auto; 
+	margin-right: auto; 
+	padding: 0; 
+    }
+    .flexbox-columns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: stretch; 
+    }  
+    .flexbox-columns > article {     
+	flex: 2; 
+    } 
+    .flexbox-columns > aside {     
+	flex: 1; 
+    }
+    .related-content {
+        display: grid; 
+	grid-template-columns: 1fr 1fr; 
+	column-gap: 1rem; 
+	row-gap: 1rem; 
+    } 
+    .related-panel img { 
+	height: 370px; 
+    }
+    .related-content > :nth-child(5) {
+   	grid-column: 1 / -1;	
+	justify-self: center;
+    }
+} 
+
+.container {
+     padding: 0 0.5rem; 
+}
+
+table tr:hover td { 
+    background-color: var(--lighter-purple); 
+    color: var(--white); 
+}
