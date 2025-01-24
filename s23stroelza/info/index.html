@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ==================================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="RESOURCES/dragon.ico">
+</head>
+<!-- ==================================================== -->
+<body>
+    <!-- Main container for the website -->
+    <div class="container">
+        <!-- Image and titles section -->
+        <div class="header-section">
+            <img src="RESOURCES/angel.png" alt="Angel" class="angel-image">
+            <div class="title">
+                <h1 class="main-title">Information</h1>
+                <h2 class="sub-title">general</h2>
+            </div>
+        </div>
+
+        <!-- Paragraphs section -->
+        <div class="description">
+            <p class="paragraph"><span>Web Technologies</span> 1st Practical Project, Ventspils University of Applied Sciences</p>
+            <p class="paragraph"><span>Stylization</span> elements inspired by Mork Borg</p>
+        </div>
+
+        <!-- Footer section with cross image and year -->
+        <div class="footer">
+            <img src="RESOURCES/cross.png" alt="Cross" class="cross-image" id="cross-link">
+            <p class="year">2024</p>
+        </div>
+    </div>
+
+    <!-- ------------------------------------------------ -->
+    <script>
+        //Click -> back to main
+        document.getElementById('cross-link').addEventListener('click', function() {
+            window.location.href = "../main/index.html";
+        });
+    </script>
+    <!-- ------------------------------------------------ -->
+</body>
+<!-- ==================================================== -->
+</html>

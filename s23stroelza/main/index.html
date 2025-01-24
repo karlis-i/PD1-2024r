@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- ==================================================== -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="RESOURCES/dragon.ico">
+</head>
+<!-- ==================================================== -->
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="icon-group">
+            <a href="https://www.dndbeyond.com" target="_blank"><img src="RESOURCES/icon1.png" alt="Info"></a>
+            <a href="https://discord.com/invite/dnd" target="_blank"><img src="RESOURCES/icon2.png" alt="Discord"></a>
+        </div>
+        <div class="title-container">
+            <a href="../info/index.html" class="flame-link">
+                <img src="RESOURCES/flame.png" alt="D&D Logo" class="flame-image">
+            </a>
+        </div>
+        <div class="icon-group">
+            <a href="https://5e.tools/index.html" target="_blank"><img src="RESOURCES/icon3.png" alt="Tools"></a>
+            <a href="https://www.dnd-compendium.com/dm-resources" target="_blank"><img src="RESOURCES/icon4.png" alt="Resources"></a>
+        </div>
+    </nav>
+<!-- ==================================================== -->
+    <!-- Section 1: What is D&D? -->
+    <section class="section-1">
+        <div class="description">
+            <h1>What is D&D?</h1>
+            <article>
+                <p>Dungeons and Dragons is a tabletop fantasy role-playing game (TTRPG).</p>
+                <p>The game is set in a medieval fantasy world in which multiple players form a group that is led through an adventure by one player who assumes the role of the storyteller, or Dungeon Master.</p>
+                <p>The players create a character, which partakes in the story - they choose a race (human, elf, dwarf, halfling), a class (e.g., Fighter, Rogue, Wizard), and skills for their character, and they apportion a small number of points to different attributes (Constitution, Strength, Dexterity, Intelligence, Wisdom, and Charisma) that determine how effective a character is in performing various actions. The probability of succeeding actions is done through dice rolls and the players' stats.</p>
+            </article>
+        </div>
+    </section>
+<!-- ==================================================== -->
+    <!-- Section 2: Dice Section -->
+    <section class="section-2">
+        <div class="section-2-title">
+            <h1>the dice</h1>
+            <h2>used in game</h2>
+        </div>
+
+        <div class="dice-container">
+            <div class="left-dice-group">
+                <img src="RESOURCES/d20.png" alt="D20" class="dice" onclick="rollDice('d20', 20)">
+                <img src="RESOURCES/d12.png" alt="D12" class="dice" onclick="rollDice('d12', 12)">
+                <img src="RESOURCES/d10.png" alt="D10" class="dice" onclick="rollDice('d10', 10)">
+            </div>
+
+            <div class="sword-container">
+                <img src="RESOURCES/sword.png" alt="Sword" class="sword">
+                <div class="dice-type" id="dice-type">DX</div>
+                <div class="dice-result" id="dice-result">X</div>
+            </div>
+
+            <div class="right-dice-group">
+                <img src="RESOURCES/d8.png" alt="D8" class="dice" onclick="rollDice('d8', 8)">
+                <img src="RESOURCES/d6.png" alt="D6" class="dice" onclick="rollDice('d6', 6)">
+                <img src="RESOURCES/d4.png" alt="D4" class="dice" onclick="rollDice('d4', 4)">
+            </div>
+        </div>
+    </section>
+<!-- ==================================================== -->
+    <!-- Section 3: Seal Your Fate - Character generation -->
+    <section id="section-3">
+        <div class="fate-container">
+            <div class="title-container">
+                <img src="RESOURCES/dedsplat.png" alt="Splatter" class="title-bg">
+                <h1 class="title-text">seal your fate</h1>
+            </div>
+
+            <div class="middle-container">
+                <button class="heart-button" onclick="generateCharacter()">
+                    <img src="RESOURCES/yellowheart.png" alt="Heart" class="heart-img">
+                </button>
+            </div>
+
+            <div class="stats-table">
+                <table>
+                    <tr>
+                        <td class="title">Name</td>
+                        <td id="name" class="blank">Blank</td>
+                        <td class="title">Race</td>
+                        <td id="race" class="blank">Blank</td>
+                    </tr>
+                    <tr>
+                        <td class="title">Class</td>
+                        <td id="class" class="blank">Blank</td>
+                        <td class="title">Order</td>
+                        <td id="order" class="blank">Blank</td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <table>
+                    <tr class="header">
+                        <td>Strength</td>
+                        <td>Dexterity</td>
+                        <td>Constitution</td>
+                    </tr>
+                    <tr class="stats">
+                        <td id="strength">X</td>
+                        <td id="dexterity">X</td>
+                        <td id="constitution">X</td>
+                    </tr>
+                    <tr class="header">
+                        <td>Wisdom</td>
+                        <td>Charisma</td>
+                        <td>Intelligence</td>
+                    </tr>
+                    <tr class="stats">
+                        <td id="wisdom">X</td>
+                        <td id="charisma">X</td>
+                        <td id="intelligence">X</td>
+                    </tr>
+                </table>
+            </div>
+            
+        </div>
+    </section>
+<!-- ==================================================== -->
+    <script src="script.js"></script>
+</body>
+<!-- ==================================================== -->
+</html>

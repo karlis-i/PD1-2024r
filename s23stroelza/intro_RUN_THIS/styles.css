@@ -1,0 +1,153 @@
+/* ==================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General body */
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    background: url('RESOURCES/closed.png') no-repeat center center;
+    background-size: cover;
+    transition: background 0.8s ease-in-out; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ==================================================== */
+/* Fonts */
+@font-face {
+    font-family: 'Old'; 
+    src: url('RESOURCES/OPTIEngraversOldEnglish.ttf'); 
+}
+@font-face {
+    font-family: 'Reg'; 
+    src: url('RESOURCES/RademosRegular.ttf'); 
+}
+/* ==================================================== */
+/* Full container */
+#container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+/*-- ------------------------------------------------ --*/
+/* Skull container */
+#skull-icons {
+    position: relative;         /* To overlap images */
+    display: flex;              /* For centering */
+    justify-content: center;    /* Horizontal */
+    align-items: center;        /* Vertical */
+    width: 100%; 
+    height: 100px;
+}
+
+/* Skull images */
+#skull-icons img {
+    position: absolute;
+    margin-top: 150px;
+    left: 50;
+    width: 120px; 
+    height: auto;
+    transition: opacity 0.8s ease-in-out; 
+}
+
+/* Yellow skull opacity and position over original */
+#skull-icons .yellow-skull {
+    opacity: 0;
+    z-index: 1; 
+}
+/*-- ------------------------------------------------ --*/
+/* Top splat */
+#top-splat {
+    position: relative;
+    margin-top: -230px;
+}
+#top-splat img {
+    width: 750px;
+}
+.top-text {
+    position: absolute;
+    font-family: 'Old'; 
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap;  
+    color: white;
+    font-size: 44px; 
+    text-align: center; 
+    line-height: 1;     
+}
+/*-- ------------------------------------------------ --*/
+/* Bottom splat */
+#bottom-splat {
+    position: relative;
+    margin-top: -700px;
+    cursor: pointer;
+}
+#bottom-splat img {
+    width: 350px; 
+}
+.bottom-text {
+    position: absolute;
+    font-family: 'Old'; 
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fae631;
+    font-size: 38px; 
+    transition: color 0.3s ease-in-out;
+}
+/*-- ------------------------------------------------ --*/
+/* Hover effects */
+#bottom-splat:hover #enter-text {
+    color: #fae631;
+}
+
+/* Bottom-splat triggers skull image fade to yellow */
+#bottom-splat:hover ~ #skull-icons .yellow-skull {
+    opacity: 1; 
+}
+
+/* Hover transition to open the door */
+body.open-door {
+    background-image: url('RESOURCES/open.png');
+    background-size: cover;       
+    background-position: center;
+    transition: background 0.8s ease-in-out;
+}
+/* ==================================================== */
+/* Mobile vers */
+@media only screen and (max-width: 600px) {
+    #skull-icons img {
+        width: 80px;
+        margin-top: 200px; 
+    }
+
+    #top-splat img {
+        width: 250px; 
+        margin-top: -230px; 
+    }
+
+    #bottom-splat img {
+        width: 200px; 
+    }
+
+    .top-text {
+        font-size: 18px;
+    }
+
+    .bottom-text {
+        font-size: 22px; 
+    }
+}
+/* ==================================================== */
