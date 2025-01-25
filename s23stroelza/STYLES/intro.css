@@ -1,14 +1,7 @@
+@import url('genstyles.css');
 /* ==================================================== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 /* General body */
 body, html {
-    height: 100%;
-    width: 100%;
-    font-family: 'Courier New', Courier, monospace;
     overflow: hidden;
     background: url('RESOURCES/closed.png') no-repeat center center;
     background-size: cover;
@@ -16,16 +9,6 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* ==================================================== */
-/* Fonts */
-@font-face {
-    font-family: 'Old'; 
-    src: url('RESOURCES/OPTIEngraversOldEnglish.ttf'); 
-}
-@font-face {
-    font-family: 'Reg'; 
-    src: url('RESOURCES/RademosRegular.ttf'); 
 }
 /* ==================================================== */
 /* Full container */

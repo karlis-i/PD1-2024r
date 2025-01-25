@@ -1,4 +1,30 @@
 //====================================================
+// INTRO JS
+//====================================================
+//Click -> Main part of website
+function enterWebsite() {
+    window.location.href = "main.html";
+}
+//====================================================
+//(!)   : Looked at internet code to make this
+//Hover -> skull transition
+//Fade in yskull
+document.getElementById('bottom-splat').addEventListener('mouseover', function(){
+    document.body.classList.add('open-door');
+    document.getElementById('enter-text').textContent = 'enter.';
+    const yellowSkull = document.querySelector('#skull-icons .yellow-skull');
+    yellowSkull.style.opacity = '1';
+});
+//Fade out yskull
+document.getElementById('bottom-splat').addEventListener('mouseout', function(){
+    document.body.classList.remove('open-door');
+    document.getElementById('enter-text').textContent = 'enter?';
+    const yellowSkull = document.querySelector('#skull-icons .yellow-skull');
+    yellowSkull.style.opacity = '0';
+});
+//====================================================
+// MAIN JS
+//====================================================
 //Function - Roll dice
 function rollDice(diceType, maxRoll) {
     const rollResult = Math.floor(Math.random() * maxRoll) + 1;
@@ -10,6 +36,7 @@ function rollDice(diceType, maxRoll) {
     document.getElementById('dice-result').textContent = rollResult;
 }
 //====================================================
+//(!)   : AI use
 //Function - Character generation
 function generateCharacter() {
     //List of classes, races, and orders
@@ -45,6 +72,7 @@ function generateCharacter() {
     document.getElementById('intelligence').textContent = stats.intelligence;
   }
 //====================================================
+//(!)   : AI use
 //Function - Generate stats using point-buy system
 //Source: https://www.skullsplitterdice.com/blogs/dnd/point-buy-5e
   function generateStats(){

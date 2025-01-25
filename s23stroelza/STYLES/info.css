@@ -1,21 +1,7 @@
-/* ==================================================== */
-/* Fonts */
-@font-face {
-    font-family: 'Old'; 
-    src: url('RESOURCES/OPTIEngraversOldEnglish.ttf'); 
-}
-
-@font-face {
-    font-family: 'Etch'; 
-    src: url('RESOURCES/Deutschedruckschrift.ttf'); 
-}
+@import url('genstyles.css');
 /* ==================================================== */
 /* General body */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
     background: url('RESOURCES/black.png') no-repeat center center fixed; 
     background-size: cover; 
 }
