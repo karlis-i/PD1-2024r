@@ -1,0 +1,23 @@
+/* ==================================================== */
+/* Fonts */
+@font-face {
+    font-family: 'Old'; 
+    src: url('RESOURCES/OPTIEngraversOldEnglish.ttf'); 
+}
+@font-face {
+    font-family: 'Etch'; 
+    src: url('RESOURCES/Deutschedruckschrift.ttf'); 
+}
+@font-face {
+    font-family: 'Reg'; 
+    src: url('RESOURCES/Rademos.ttf'); 
+}
+/* ==================================================== */
+/* General body */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+/* ==================================================== */
