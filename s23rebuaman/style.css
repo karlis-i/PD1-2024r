@@ -1,0 +1,227 @@
+:root {
+ --text-main: #212121;
+ --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UISymbol";
+ --font-heading: "Playwrite GB S", cursive;
+ --text-main: #212121;
+ --text-green: #006540;
+ --text-orange: #e36414;
+ --white: #ffffff;
+ --bg-light-gray: #ececec;
+ --bg-dark-gray: #4c4c4e;
+}
+* {
+ box-sizing: border-box;
+}
+html {
+ font-family: var(--font-default);
+ font-size: 14px;
+ color: var(--text-main);
+ line-height: 1.5;
+}
+body {
+ margin: 0;
+ background: navy;
+}
+
+h1{
+  font-family: var(--font-heading);
+  color: white;
+  text-align: center;
+}
+
+p{
+  color: white;
+  text-align: center;
+  margin-right: 7%;
+  margin-left: 7%;
+}
+
+h2{
+  color: white;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+h4 {
+  color: white;
+  font-size: 25px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+figcaption {
+  color: white;
+  font-size: 21px;
+}
+
+iframe {
+  display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 600px;
+    border-radius: 50px;
+    object-position: 15% 10%;
+}
+
+aside img{ 
+  display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+  border-radius: 50px;
+}
+
+section img{ 
+  display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 100%;
+}
+
+
+a {
+  color: white;
+}
+a:hover {
+  color: lightblue;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background: var(--text-green);
+  background: #040241;
+  color: var(--white);
+  padding: 4rem 0;
+  height: 200px;
+  background-image: url('https://cdn.glitch.global/8b9925a3-be42-45b7-88d8-0cf779ed0475/302.png?v=1730978799718'); 
+  background-size: cover;
+  background-position: absolute;
+}
+
+footer {
+  text-align: center;
+  background: var(--text-green);
+  background: #040241;
+  color: var(--white);
+  padding: 4rem 0;
+  background-image: url('https://cdn.glitch.global/8b9925a3-be42-45b7-88d8-0cf779ed0475/302.png?v=1730978799718'); 
+  background-size: cover;
+  background-position: absolute;
+  margin-top: 4rem;
+}
+header p, footer p {
+  margin: 0;
+  font-family: var(--font-heading);
+}
+
+nav ul {
+ margin: 0;
+ padding: 0;
+}
+nav ul li {
+ list-style-type: none;
+ display: inline-block;
+}
+
+nav ul li::after {
+  content: "\1F90D";
+}
+  
+nav ul li:last-child::after {
+ content: "";
+}
+  
+nav ul li a {
+  color: var(--text-white);
+}
+
+table {
+  border: 1px solid white;
+  width: 70%;
+  color: white;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+}
+
+table tr th, table tr td {
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  padding: 0.25rem 0.5rem;
+  text-transform: uppercase;
+}
+table tr th:last-child, table tr td:last-child {
+  border-right: none;
+}
+table tr:last-child th, table tr:last-child td {
+  border-bottom: none;
+}
+
+table tr td:hover {
+  color: black;
+}
+.related-panel h3 {
+     text-align: center;
+}
+.related-panel img {
+    display: block;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 250px;
+    border-radius: 50px;
+    object-position: 15% 10%;
+}
+
+section img:hover {
+  filter: blur(3px);
+}
+
+
+@media screen and (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  main {
+    padding: 0;
+  }
+  * {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  margin-left:-5px;
+  margin-right:-5px;
+}
+
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+  
+.related-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+.related-panel img {
+  height: 250px;
+}
+  
+}
