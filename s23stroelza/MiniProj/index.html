@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<!--==================================================== -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>D&D - BARE</title>
+    <meta name="description" content="Introduction to Dungeons & Dragons">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="IMAGES/drag.ico">
+</head>
+<!--==================================================== -->
+<body>
+    <div class="gradient-rectangle"></div>
+
+    <div class="nav-background">
+        <img src="IMAGES/headcirc.png" alt="Background Decorative Circle">
+    </div>
+<!--==================================================== -->
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="container">
+            <div class="nav-left">
+                <a href="https://www.dndbeyond.com" target="_blank">
+                    <img src="IMAGES/info.png" alt="Icon 1">
+                </a>
+                <a href="https://discord.com/invite/dnd" target="_blank">
+                    <img src="IMAGES/disc.png" alt="Icon 2">
+                </a>
+            </div>
+            <div class="nav-center">
+                <img src="IMAGES/flame.png" alt="Flame">
+            </div>
+            <div class="nav-right">
+                <a href="https://5e.tools/index.html" target="_blank">
+                    <img src="IMAGES/tools.png" alt="Icon 3">
+                </a>
+                <a href="https://www.dnd-compendium.com/dm-resources" target="_blank">
+                    <img src="IMAGES/res.png" alt="Icon 4">
+                </a>
+            </div>
+        </div>
+    </nav>
+<!--==================================================== -->
+    <!-- Section: What is D&D? -->
+    <section class="section-1">
+        <div class="container">
+            <h1 class="section-heading">What is D&D?</h1>
+            <div class="line-separator"></div>
+            <p class="section-description">
+                <span class="bold-text">Dungeons and Dragons is a tabletop fantasy role-playing game (TTRPG).</span> <br> <br>
+                The game is set in a medieval fantasy world in which multiple players form a group that is led through an adventure by one player who assumes the role of the storyteller, or Dungeon Master. <br> <br>
+                The players create a character, which partakes in the story - they choose a race <span class="col-text">(human, elf, dwarf, halfling)</span>, a class <span class="col-text">(e.g., Fighter, Rogue, Wizard)</span>, and skills for their character, and they 
+                apportion a small number of points to different attributes <span class="col-text">(Constitution, Strength, Dexterity, Intelligence, Wisdom, and Charisma)</span> that determine how effective a character is in performing various actions. 
+                The probability of succeeding actions is done through dice rolls and the players' stats.
+            </p>            
+        </div>
+    </section>
+<!--==================================================== -->
+    <!-- Section: Dice -->
+    <section class="section-dice">
+        <div class="container">
+            <h1 class="section-heading">Dice</h1>
+            <p class="section-description">
+                <span class="bold-text">Dice are used to determine the outcomes of actions, events, and combat, <span class="col-text">adding an element of chance to the game.</span></span> <br> <br>
+            </p>  
+            <div class="line-separator"></div>
+        </div>  
+        <div class="container dice-container">
+            <div class="dice-buttons">
+                <div class="dice-row">
+                    <button class="dice-btn" id="d20-btn"><img src="IMAGES/d20.svg" alt="D20 Dice"></button>
+                    <button class="dice-btn" id="d12-btn"><img src="IMAGES/d12.svg" alt="D12 Dice"></button>
+                    <button class="dice-btn" id="d10-btn"><img src="IMAGES/d10.svg" alt="D10 Dice"></button>
+                </div>
+                <div class="dice-row second-row">
+                    <button class="dice-btn" id="d8-btn"><img src="IMAGES/d8.svg" alt="D8 Dice"></button>
+                    <button class="dice-btn" id="d6-btn"><img src="IMAGES/d6.svg" alt="D6 Dice"></button>
+                    <button class="dice-btn" id="d4-btn"><img src="IMAGES/d4.svg" alt="D4 Dice"></button>
+                </div>
+            </div>
+            <div class="dice-result">
+                <div class="dice-type" id="dice-type">DX</div>
+                <div class="dice-roll" id="dice-roll">XX</div>
+            </div>
+        </div>
+    </section>
+<!--==================================================== -->
+    <!-- Section: Character Generation -->
+    <section class="section-character">
+        <div class="container">
+            <div class="heading-container">
+                <h1 class="section-heading">Character</h1>
+                <div class="generate-container">
+                    <button class="generate-btn"><span>Generate</span></button>
+                </div>
+            </div>
+            <!-- Desc -->
+            <p class="section-description">
+                <span class="bold-text">Create a random character <span class="col-text">& see what stat sheets usually look like!</span></span> <br> <br>
+            </p>  
+            <div class="line-separator"></div>
+
+            <!-- Character Information -->
+            <table class="character-info">
+                <tr>
+                    <td class="info-cell name-cell">Name: <span id="name">Blank</span></td>
+                    <td class="info-cell name-cell" style="visibility: hidden; padding: 0.5px;"><span id="blank1"></span></td>
+                    <td class="info-cell race-cell">Race: <span id="race">Blank</span></td>
+                </tr>
+                <tr>
+                    <td class="info-cell class-cell">Class: <span id="class">Blank</span></td>
+                    <td class="info-cell name-cell" style="visibility: hidden; padding: 0.5px;"><span id="blank2"></span></td>
+                    <td class="info-cell order-cell">Order: <span id="order">Blank</span></td>
+                </tr>
+            </table>
+            
+            <!-- Character Stats -->
+            <table class="character-stats">
+                <tr>
+                    <td class="stat-cell"><strong>STR</strong><span id="strength" class="stat-value">X</span></td>
+                    <td class="stat-cell"><strong>DEX</strong><span id="dexterity" class="stat-value">X</span></td>
+                    <td class="stat-cell"><strong>CON</strong><span id="constitution" class="stat-value">X</span></td>
+                </tr>
+                <tr>
+                    <td class="stat-cell"><strong>INT</strong><span id="intelligence" class="stat-value">X</span></td>
+                    <td class="stat-cell"><strong>WIS</strong><span id="wisdom" class="stat-value">X</span></td>
+                    <td class="stat-cell"><strong>CHA</strong><span id="charisma" class="stat-value">X</span></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+<!--==================================================== -->
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><span class="dark-text">Bare Bones version of main project page : Elza Strode, VeA, 2025 <br> bad design bc last minute ;-;</span></p>
+        </div>
+    </footer>
+<!--==================================================== -->
+    <script src="script.js"></script>
+</body>
+</html>
