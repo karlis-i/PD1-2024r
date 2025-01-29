@@ -1,0 +1,466 @@
+/* ==================================================== */
+/* General body */
+:root {
+    --text-main: #ECECEC;
+    --white: #fff;
+    --bg-dark: #18181A;
+    --bg-light: #111113;
+    --bg-section: #111214;
+    --font-default: "Pixelify Sans", normal;
+    --font-heading: "Pixelify Sans", bold;
+    --border-info: #202223;
+    --border-stats: #1A1C1D;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: var(--font-default);
+    font-size: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+body {
+    background: linear-gradient(180deg, #18181A 0%, #19191B 100%);
+}
+/* ==================================================== */
+/* Gradient near nav */
+.gradient-rectangle {
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    top: -4%;
+    background: linear-gradient(180deg, #111214, #18181A);
+    z-index: -1;
+    opacity: 0.5;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: var(--bg-light);
+    padding: 1.5rem;
+    position: relative;
+    width: 90%;
+    border-radius: 35px;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    z-index: 1;
+}
+
+/* Styling for the image behind the navigation bar */
+.nav-background {
+    position: absolute;
+    width: 100%;
+    top: -20%;
+    left: 0;
+    z-index: -1; 
+}
+
+.nav-background img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: -1; 
+    width: 300px;
+    opacity: 0.7;
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.nav-left {
+    left: 1rem;
+}
+
+.nav-right {
+    right: 1rem;
+}
+
+.nav-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Flame image */
+nav .nav-center img {
+    width: 145px; 
+    height: auto;
+}
+
+.nav-left a, .nav-right a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Icons */
+.nav-left img, .nav-right img {
+    width: 40px; 
+    height: 40px;
+}
+/* =============================================== */
+/* DESKTOP - NAV */
+@media screen and (min-width: 992px) {
+    .nav-left, .nav-right {
+        top: 50%; /* Adjusted vertical alignment */
+        transform: translateY(-45%);
+    }
+
+    /* Spacing */
+    .nav-left {
+        left: 20rem; 
+    }
+    .nav-right {
+        right: 20rem; 
+    }
+
+    .nav-left img, .nav-right img {
+        width: 60px; 
+        height: 60px;
+    }
+    .nav-left, .nav-right {
+        gap: 6rem;
+    }
+
+    /* Flame image */
+    .nav-background {
+        top: -40%; 
+    }
+    nav .nav-center img {
+        width: 220px;
+        margin-top: 2rem; 
+    }
+
+    /* Circle */
+    .nav-background img {
+        width: 550px; 
+    }
+
+}
+/* ==================================================== */
+/* Section: What is D&D? */
+.section-1 {
+    background-color: var(--bg-section);
+    width: 90%;
+    border-radius: 30px;
+    padding: 3rem 0;
+    margin: 1rem auto;
+    font-weight: 400;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.col-text {
+    color: #838383;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px; 
+}
+
+.section-heading {
+    font-size: 9rem;
+    font-family: var(--font-heading);
+    text-align: left;
+    margin-bottom: 0.5rem;
+    position: relative;
+    top: -1rem; /* Adjust the value as needed to move it higher */
+}
+
+.section-description {
+    text-align: justify;
+    font-size: 1rem;
+    color: var(--text-main);
+    margin-top: 0.5rem;
+}
+
+.line-separator {
+    width: 100%;
+    height: 8px;
+    background-color: #18181A; 
+    margin: 0.5rem 0;
+    border-radius: 15px; 
+    position: relative;
+    top: -0.4rem;
+}
+/* ==================================================== */
+/* Footer */
+footer {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+.dark-text {
+    color: #2C2C2E;
+    font-weight: 600;
+}
+/* ==================================================== */
+/* Section: Dice */
+.section-dice {
+    background-color: var(--bg-section);
+    width: 90%;
+    border-radius: 30px;
+    padding: 3rem 0;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dice-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.dice-table {
+    width: 50%;
+    margin-right: 0.5rem;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.dice-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dice-btn img {
+    width: 75px;
+    height: 75px;
+}
+
+.dice-result {
+    background-color: #141517;
+    border-radius: 30px;
+    width: 75px;
+    height: 157px;
+    padding: 1rem;
+    text-align: center;
+    color: #2C2C2E;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid var(--border-stats);
+    margin-left: 1rem;
+    margin-top: -0.1rem;
+}
+
+.dice-type {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    
+}
+
+.dice-roll {
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* ==================================================== */
+/* DESKTOP : DICE */
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 19px;
+    }
+
+    .dice-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .dice-buttons {
+        display: contents;
+    }
+
+    .dice-result {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+        width: 179px;
+        height: 85px;
+        padding: 1rem;
+        grid-column: 4 / 5;
+        background-color: #141517;
+        border-radius: 30px;
+        text-align: center;
+        color: #2C2C2E;
+        border: 4px solid var(--border-stats);
+        margin-left: -61.4rem;
+    }
+
+    .dice-type {
+        justify-self: start; 
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: -0.5rem;
+    }
+    
+    .dice-roll {
+        justify-self: end;
+        font-size: 2rem;
+        margin-bottom: 0;
+        margin-top: -0.5rem;
+    }
+
+    .dice-btn img {
+        width: 90px;
+        height: 90px;
+    }
+}
+/* ==================================================== */
+/* THIN DEVICES */
+@media screen and (max-width: 390px) {
+    .dice-btn img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .dice-result {
+        height: 140px;
+    }
+}
+/* ==================================================== */
+/* Character Section */
+.section-character {
+    background-color: var(--bg-section);
+    width: 90%;
+    border-radius: 30px;
+    padding: 3rem 0;
+    margin: 1rem auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Character Info Table */
+.character-info {
+    width: 100%;
+    margin: 1rem auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.info-cell {
+    background-color: #141517;
+    color: #F9FBFA;
+    padding: 10px;
+    border: 4px solid var(--border-info);
+    font-size: 20px;
+    text-align: left;
+    font-weight: bold;
+    padding-left: 10px;
+    border-radius: 40px;
+}
+
+/* Merging Effect for Info Cells */
+.name-cell, .race-cell, .class-cell, .order-cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.name-cell span, 
+.race-cell span, 
+.class-cell span, 
+.order-cell span {
+    font-weight: bold;
+    color: #4C4C50;
+    margin-left: auto;
+}
+
+/* Character Stats Table */
+.character-stats {
+    width: 100%;
+    margin: 1rem auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    margin-top: -1.5rem; 
+}
+
+.stat-cell {
+    background-color: #141517;
+    color: #4C4C50;
+    padding: 10px;
+    border: 4px solid var(--border-stats);
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 25px;
+    font-size: 30px;
+}
+
+.stat-value {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2C2C2E;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 0.5rem;
+}
+
+.section-heading {
+    font-size: 2rem;
+    color: var(--text-main);
+    margin: 0;
+}
+
+.generate-container {
+    margin: 0;
+}
+
+.generate-btn {
+    background: linear-gradient(180deg, #272729 0%, #202223 100%);
+    font-family: var(--font-default);
+    color: #4C4C50;
+    padding: 10px 22px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-left: 1rem; 
+    position: relative;
+    top: -1rem; 
+}
+
+.generate-btn:hover {
+    background-color: #4C4C50;
+}
+/* ==================================================== */
