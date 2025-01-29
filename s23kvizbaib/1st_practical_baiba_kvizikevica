@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+ <head>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./style1.css">
+ <meta charset="utf-8">
+ <title>1st Practical Project</title>
+ <meta name="description" content="This is an HTML document by Baiba Kvizikeviča">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ </head>
+ <body>
+    <!-- header -->
+    <header>
+        <div class="container2">
+            <p class="lead">1st Practical Project</p>
+            <p class="sub">Ventspils University of Applied Sciences</p>
+        </div>
+    </header>
+    <!-- navigation -->
+    <nav>
+        <div class="container2">
+            <ul>
+            <li>
+                <a href="https://www.formula1.com/" target="_blank">Formula 1</a>
+            </li>
+            <li>
+                <a href="https://validator.w3.org/" target="_blank">W3 Validator</a>
+            </li>
+            <li>
+                <a href="https://git-scm.com/" target="_blank">Git</a>
+            </li>
+            <li>
+                <a href="https://www.skysports.com/f1/news/12433/13292832/f1-2025-season-full-calendar-testing-and-race-schedule-driver-line-ups-rules-how-to-watch-whats-new" target="_blank">SkySportsF1</a>
+            </li>
+            <li>
+                <a href="https://www.sportsnet.ca/formula-1/article/f1-2025-team-and-driver-lineups-latest-news-and-reports/" target="_blank">SportsNet</a>
+            </li>
+            <li>
+                <a href="https://racingnews365.com/f1-reserve-drivers-2025" target="_blank">RacingNews365</a>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- content -->
+    <main class="container2">
+        <article>
+            <h1>2025 Formula 1 grid</h1>
+                <img src="https://scontent.frix3-1.fna.fbcdn.net/v/t39.30808-6/470815360_874503911561169_9079399726029356248_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=Av8SAlqmEGYQ7kNvgEFWAIu&_nc_zt=23&_nc_ht=scontent.frix3-1.fna&_nc_gid=AYer66yau6NdXIiQajmEXbE&oh=00_AYCh7zGxFxr6OpQ9UZlCVY2dnKkF3kbV5opd5UyQVyxQOA&oe=679AE990" alt="F1 grid" class="imgcenter">
+                <div class="container">
+                <p class="text">What is Formula 1? Who races in this elite sport? Why is it loved by so many? Join me on this journey to find the answers to all of these burning questions!</p>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/Getty/Singapore_2019/Sunday/GettyImages-1176346667" alt="Sebastian Vettel after the Singapore GP" class="image">
+                </div>
+                <div class="container">
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,g_faces,ar_16:9/content/dam/fom-website/sutton/2019/AbuDhabi/Sunday/CM1_4369_2019120131634705" alt="F1 Teams" class="image">
+                <p class="text"><em>Formula 1</em> is the pinnacle of motorsport, featuring the fastest cars and the best drivers competing on iconic circuits worldwide. Since 1950, it has captivated fans with high-speed drama, cutting-edge technology, and fierce rivalries, blending precision, innovation, and excitement.</p>
+                </div>
+                <div class="container">
+                <p class="text"><em>Who races in F1?</em> F1 drivers are elite athletes, adored for their skill, reflexes, and mental resilience. They drive high-speed cars, exceeding 300 km/h, with precision and quick decision making. Beyond fitness, they excel in strategy, adaptability, embodying determination and the pursuit of perfection in motorsport.</p>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,g_faces,ar_16:9/fom-website/2024/Japan/leclerc-bianchi-helmet-5" alt="F1 Teams" class="image">
+                </div>
+            </article>
+        <aside>
+            <h2>2025 F1 grid</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Racing number</th>
+                    <th>Team</th>
+                    <th>Nationality</th>
+                  </tr>
+                  <tr>
+                    <td><a href="#section1">Charles Leclerc</a></td>
+                    <td>16</td>
+                    <td>Scuderia Ferrari HP</td>
+                    <td>Monaco</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section2">Lewis Hamilton</a></td>
+                    <td>44</td>
+                    <td>Scuderia Ferrari HP</td>
+                    <td>United Kingdom</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section3">Oscar Piastri</a></td>
+                    <td>81</td>
+                    <td>McLaren</td>
+                    <td>Australia</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section4">Lando Norris</a></td>
+                    <td>4</td>
+                    <td>Mclaren</td>
+                    <td>United Kingdom</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section5">Max Verstappen</a></td>
+                    <td>33</td>
+                    <td>Oracle Red Bull Racing</td>
+                    <td>Netherlands</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section6">Liam Lawson</a></td>
+                    <td>30</td>
+                    <td>Oracle Red Bull Racing</td>
+                    <td>New Zealand</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section7">George Russell</a></td>
+                    <td>63</td>
+                    <td>Mercedes AMG Petronas</td>
+                    <td>United Kingdom</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section8">Andrea Kimi Antonelli</a></td>
+                    <td>12</td>
+                    <td>Mercedes AMG Petronas</td>
+                    <td>Italy</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section9">Lance Stroll</a></td>
+                    <td>18</td>
+                    <td>Aston Martin</td>
+                    <td>Canada</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section10">Fernando Alonso</a></td>
+                    <td>14</td>
+                    <td>Aston Martin</td>
+                    <td>Spain</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section11">Pierre Gasly</a></td>
+                    <td>10</td>
+                    <td>Alpine</td>
+                    <td>France</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section12">Jack Doohan</a></td>
+                    <td>7</td>
+                    <td>Alpine</td>
+                    <td>Australia</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section13">Oliver Bearman</a></td>
+                    <td>87</td>
+                    <td>Haas</td>
+                    <td>United Kingdom</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section14">Esteban Ocon</a></td>
+                    <td>31</td>
+                    <td>Haas</td>
+                    <td>France</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section15">Yuki Tsunoda</a></td>
+                    <td>22</td>
+                    <td>Racing Bulls</td>
+                    <td>Japan</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section16">Isack Hadjar</a></td>
+                    <td>6</td>
+                    <td>Racing Bulls</td>
+                    <td>France</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section17">Alex Albon</a></td>
+                    <td>23</td>
+                    <td>Williams</td>
+                    <td>Thailand</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section18">Carlos Sainz</a></td>
+                    <td>55</td>
+                    <td>Williams</td>
+                    <td>Spain</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section19">Nico Hulkenberg</a></td>
+                    <td>27</td>
+                    <td>Kick Sauber</td>
+                    <td>Germany</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#section20">Gabriel Bortoleto</a></td>
+                    <td>5</td>
+                    <td>Kick Sauber</td>
+                    <td>Brazil</td>
+                  </tr>
+            </table>
+           </aside>
+           <section id="section1">
+                <h3>Charles Leclerc #16</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2050987064_16by9Centre" alt="Charles Leclerc" class="imgleft">
+                <p>The Monegasque driver continues his tenure with Ferrari, known for his raw speed and qualifying prowess. Leclerc has been instrumental in Ferrari's resurgence and is eager to capitalize on the team's improvements. His partnership with Hamilton is anticipated to be one of the most formidable on the grid.</p>
+                <a href="#top">Back to the top!</a>
+            </section>
+        
+           <section id="section2">
+                <h3>Lewis Hamilton #44</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverGalleries2023/Hamilton/1574181499-16by9Centre" alt="Lewis Hamilton" class="imgleft">
+                <p>After a storied career with Mercedes, the seven-time world champion makes a historic move to Ferrari. Hamilton's experience and unparalleled success bring a wealth of knowledge to the Scuderia. His collaboration with Leclerc is poised to be a highlight of the season.</p>
+           </section>
+        
+            <section id="section3">
+                <h3>Oscar Piastri #81</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2068364720-16by9Centre" alt="Oscar Piastri" class="imgleft">
+                <p>The Australian prodigy retains his seat after an impressive second season. Piastri's technical talent and composure have drawn comparisons to seasoned veterans. His partnership with Norris is considered one of the strongest on the grid.</p>
+            </section>
+
+            <section id="section4">
+                <h3>Lando Norris #4</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2045580404_16by9South" alt="Lando Norris" class="imgleft">
+                <p>After a rocky season with McLaren, Norris has matured into a consistent and formidable competitor. His synergy with the team has been pivotal in their recent successes. Known for his sharp racecraft and charisma, Norris remains a fan favorite.</p>
+            </section>
+        
+            <section id="section5">
+                <h3>Max Verstappen #33</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverGalleries2023/Verstappen/1488926732-16by9Centre" alt="Max Verstappen" class="imgleft">
+                <p>The reigning World Champion remains the cornerstone of Red Bull, known for his aggressive driving style and racecraft. A multiple world champion, Verstappen continues to be a dominant force in the championship battle. His leadership will be crucial in mentoring his new teammate.</p>
+            </section>
+
+            <section id="section6">
+                <h3>Liam Lawson #30</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9Centre,g_faces,ar_16:9/trackside-images/2024/F1_Grand_Prix_of_Austria/2159959869" alt="Liam Lawson" class="imgleft">
+                <p>Graduating from a reserve role, the young New Zealander steps into a full-time seat at Red Bull. Lawson has demonstrated significant potential in junior categories and is eager to prove himself alongside Verstappen. His adaptability and speed will be under close scrutiny.</p>
+            </section>
+
+            <section id="section7">
+                <h3>George Russell #63</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverGalleries2023/Russell/1580518422-16by9North" alt="George Russell" class="imgleft">
+                <p>Embarking on his fourth season with Mercedes, Russell has consistently showcased his talent and determination. His analytical approach and speed have solidified his reputation as one of the leading drivers on the grid. As the senior driver, he aims to lead Mercedes back to championship glory.</p>
+            </section>
+
+            <section id="section8">
+                <h3>Andrea Kimi Antonelli #12</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9Centre,g_faces,ar_16:9/trackside-images/2024/Formula_1_Testing_in_Abu_Dhabi/2189166286" alt="Andrea Kimi Antonelli" class="imgleft">
+                <p>At just 18, Antonelli steps into Formula 1 as one of the youngest drivers in history. A product of the Mercedes Junior Team, his rapid ascent through the junior categories has been nothing short of impressive. Replacing Lewis Hamilton, Antonelli faces the challenge of filling the shoes of a legend.</p>
+            </section>
+
+            <section id="section9">
+                <h3>Lance Stroll #18</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2063248829_16by9Centre" alt="Lance Stroll" class="imgleft">
+                <p>The Canadian driver remains with Aston Martin, bringing consistency and a growing depth of experience. Stroll has shown flashes of brilliance and aims to achieve greater consistency alongside Alonso. His performances will be crucial for the team's midfield battles.</p>
+            </section>
+
+            <section id="section10">
+                <h3>Fernando Alonso #14</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2045385016_16by9Centre" alt="Fernando Alonso" class="imgleft">
+                <p>The two-time world champion continues to defy age with his relentless competitiveness. Alonso's vast experience and racecraft are invaluable assets to Aston Martin's ambitions. His mentorship is also pivotal for his teammate's development.</p>
+            </section>
+
+            <section id="section11">
+                <h3>Pierre Gasly #10</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2068751707_16by9Centre" alt="Pierre Gasly" class="imgleft">
+                <p>Gasly continues with Alpine, known for his resilience and race-winning capabilities. His journey through Formula 1 has been marked by significant comebacks and standout performances. As the team's lead driver, he aims to push Alpine further up the grid.</p>
+            </section>
+
+            <section id="section12">
+                <h3>Jack Doohan #7</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9Centre,g_faces,ar_16:9/trackside-images/2024/F1_Grand_Prix_of_Canada___Practice/2156537860" alt="Jack Doohan" class="imgleft">
+                <p>Son of motorcycle legend Mick Doohan, Jack steps into a full-time F1 role with Alpine. His progression through the junior ranks has been impressive, showcasing speed and racecraft. The Australian faces the challenge of establishing himself in a competitive environment.</p>
+            </section>
+
+            <section id="section13">
+                <h3>Oliver Bearman #87</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9South,g_faces,ar_16:9/trackside-images/2024/F1_Grand_Prix_of_Azerbaijan___Practice/2171731545" alt="Oliver Bearman" class="imgleft">
+                <p>The young British driver makes his full-time F1 debut with Haas, bringing youthful energy and potential. Bearman's junior career has been marked by rapid progression and success. His experience from the previous season will give him a hand over the other rookies.</p>
+            </section>
+
+            <section id="section14">
+                <h3>Esteban Ocon #31</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2032079751_16by9Centre" alt="Esteban Ocon" class="imgleft">
+                <p>Transitioning to Haas, Ocon aims to lead the team with his experience and tenacity. Known for his defensive driving and racecraft, he seeks to elevate Haas's competitiveness. Ocon's role as the senior driver will be pivotal.</p>
+            </section>
+
+            <section id="section15">
+                <h3>Yuki Tsunoda #22</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2050945287_16by9North" alt="Yuki Tsunoda" class="imgleft">
+                <p>Continuing with the team, Tsunoda aims to build on his previous experiences. Known for his aggressive driving and candid personality, he seeks greater consistency in his performances. His role will also involve guiding his rookie teammate.</p>
+            </section>
+
+            <section id="section16">
+                <h3>Isack Hadjar #6</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9North,g_faces,ar_16:9/fom-website/2024/RB%20(Visa%20Cash%20App)/GettyImages-2189144928" alt="Isack Hadjar" class="imgleft">
+                <p>The French-Algerian driver makes his F1 debut, bringing a fresh perspective to the grid. Hadjar's performances in the junior categories have marked him as a talent to watch. His rookie season will be pivotal for his development.</p>
+            </section>
+
+            <section id="section17">
+                <h3>Alex Albon #23</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2068817928_16by9Centre" alt="Alex Albon" class="imgleft">
+                <p>Albon remains a key figure at Williams, known for his smooth driving style and race intelligence. His experience is vital as the team continues its rebuilding phase. Albon's leadership will be crucial in extracting the maximum from the car.</p>
+            </section>
+
+            <section id="section18">
+                <h3>Carlos Sainz #55</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2050526049_16by9Centre" alt="Carlos Sainz" class="imgleft">
+                <p>Making a surprising move to Williams, Sainz brings a wealth of experience from top teams. His technical feedback and consistency are expected to accelerate Williams' progress.</p>
+            </section>
+
+            <section id="section19">
+                <h3>Nico Hulkenberg #27</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_75,w_1320,g_faces,ar_16:9/content/dam/fom-website/manual/DriverAndTeamImages/2024/2063254208_16by9South" alt="Nico Hulkenberg" class="imgleft">
+                <p>The experienced German driver continues to contribute his technical expertise and consistency to a new team. Hülkenberg's return to Formula 1 has been met with solid performances, and he aims to provide stability in a midfield battle. As one of the most seasoned drivers on the grid, his experience will be key in developing the car further.</p>
+            </section>
+
+            <section id="section20">
+                <h3>Gabriel Bortoleto #5</h3>
+                <img src="https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto,c_fill,q_auto,w_1320,t_16by9South,g_faces,ar_16:9/trackside-images/2024/Formula_1_Testing_in_Abu_Dhabi/2189150810" alt="Gabriel Bortoleto" class="imgleft">
+                <p>A Brazilian driver, who won the 2023 FIA Formula 3 and 2024 Formula 2 championships. Signed by Sauber for the 2025 F1 season, he marks Brazil's return to the F1 grid. Managed by Fernando Alonso, he’s a rising star in motorsport.</p>
+            </section> 
+    </main>
+    <!-- footer -->
+    <footer>
+        <div class="container2">
+            <p>Baiba Kvizikeviča, 2024</p>
+        </div>
+    </footer>
+   </body>
+</html>
