@@ -1,0 +1,263 @@
+:root {
+    --text-main: #0A0908;
+    --text-dark-blue: #22333B;
+    --text-dark-brown: #5E503F;
+    --text-light-gray: #8A9497;
+    --white: #F2F4F3;
+    --bg-light-gray: #8A9497;
+    --bg-extra-light-brown: #CEC3B8;
+    --bg-light-brown: #A9927D;
+    --bg-dark-brown: #5E503F;
+    --font-heading: "Playfair Display", serif;
+    --font-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: var(--font-default);
+    font-size: 14px;
+    color: var(--text-main);
+    line-height: 1.5;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: var(--text-dark-blue);
+}
+
+h4 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--text-dark-blue);
+}
+
+header {
+    background: var(--bg-dark-brown);
+    background: linear-gradient(135deg, #5E503F 40%,#A9927D 100%);
+    color: var(--white);
+    padding: 4rem 0;
+}
+
+footer {
+    background-color: var(--bg-light-brown);
+    color: var(--white);
+    padding: 4rem 0;
+    margin-top: 4rem;
+}
+
+header p, footer p {
+    margin: 0;
+    font-family: var(--font-heading);
+}
+
+nav {
+    background-color: var(--bg-extra-light-brown);
+    color: var(--text-main);
+    padding: 1rem;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+nav ul li::after {
+    content: "\2728";
+}
+
+nav ul li:last-child::after {
+    content: "";
+}
+
+nav ul li a {
+    color: var(--text-dark-blue);
+}
+
+nav ul li a:hover {
+    color: var(--text-dark-brown);
+}
+
+main {
+    padding: 0 0.5rem;
+}
+
+main p {
+    text-align: justify;
+}
+
+.related-panel h3 {
+    text-align: left;
+}
+.related-panel img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+.related-panel span {
+    display: block;
+    color: var(--text-light-gray);
+    font-size: 18px;
+}
+
+.related-panel span:nth-of-type(2) {
+    margin-top: 7px;
+    margin-bottom: 2px;
+    font-size: 16px;
+    color: var(--text-dark-blue);
+}
+
+figure {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: relative;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+article figure figcaption {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    font-family: var(--font-heading);
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid var(--bg-dark-brown);
+    width: 100%;
+}
+
+table th, table td {
+    border-width: 0;
+}
+
+table tr th, table tr td {
+    border-bottom: 1px solid var(--bg-dark-brown);
+    border-right: 1px solid var(--bg-dark-brown);
+    padding: 0.25rem 0.5rem;
+}
+
+table tr th:last-child, table tr td:last-child {
+    border-right: none;
+}
+
+table tr:last-child th, table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr th {
+    text-align: left;
+    background-color: var(--bg-dark-brown);
+    color: var(--white);
+}
+
+table tr:nth-of-type(odd) td {
+    background-color: var(--bg-extra-light-brown);
+}
+
+header p.lead {
+    font-size: 2rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+header p.sub {
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.4;
+}
+
+hr {
+    border: 1px solid var(--bg-light-brown);
+}
+
+.container {
+    padding: 0 0.5rem;
+}
+
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    .container {
+        display: block;
+        width: 992px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    table tr:hover td {
+        background-color: var(--text-dark-blue);
+        color: var(--white);
+    }
+
+    /* flexbox */
+    .flexbox-columns {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .flexbox-columns > article {
+        flex: 2; /* twice as wide as aside element */
+    }
+
+    .flexbox-columns > aside {
+        flex: 1;
+    }
+
+    /* grid container */
+    .related-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .related-panel img {
+        height: 370px;
+    }
+}
+
+
