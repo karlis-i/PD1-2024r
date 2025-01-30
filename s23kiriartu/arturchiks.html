@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This is an HTML document by Artur Kirisa">
+    <title>1st Practical Project</title>
+    <link rel="stylesheet" href="arturchiks.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="menu">
+        <script>
+            let lastScrollTop = 0;
+            const menu = document.querySelector('.menu');
+
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                if (scrollTop < 100) {
+                    menu.classList.add('show');
+                } else {
+                    menu.classList.remove('show');
+                }
+                lastScrollTop = scrollTop;
+            });
+        </script>
+        <a href="https://en.wikipedia.org/wiki/The_Amazing_World_of_Gumball">Wiki</a>
+        <a href="https://www.youtube.com/@TheAmazingWorldofGumball">YouTube</a>
+        <a href="https://www.redbubble.com/shop/the+amazing+world+of+gumball">Shop</a>
+        <a href="https://www.imdb.com/title/tt1942683/">Actors</a>
+    </div>
+
+    <div class="header">
+        <p class="up-text">1st Practical Project</p>
+        <p class="up-text">Ventspils University of Applied Sciences</p>
+    </div>
+
+    <div class="dark-block"></div>
+
+    <div class="container">
+        <div class="right">
+            <div class="text styled-text">Anais is the smartest member of the Watterson family despite being the youngest!</div>
+            <div class="image-box">
+                <img src="anais.png" alt="Anais" id="anais-img">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="text styled-text">Richard, Gumball's dad, may not be the brightest, but he sure knows how to have fun!</div>
+            <div class="image-box">
+                <img src="rabbit.png" alt="Richard" id="rabbit-img">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="text styled-text">Gumball is always getting into trouble, but he's got a big heart and loves his family.</div>
+            <div class="image-box">
+                <img src="cat.png" alt="Gumball" id="cat-img">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="text styled-text">Darwin was once Gumball's pet fish, but he grew legs and became his best friend!</div>
+            <div class="image-box">
+                <img src="darwin.png" alt="Darwin" id="darwin-img">
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="text styled-text">Nicole, the mom, holds the family together and is the only responsible adult in the house!</div>
+            <div class="image-box">
+                <img src="mum.png" alt="Nicole" id="mum-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="dark-block"></div>
+
+    <footer>
+        <p class="dawn-text">Arturs Kirisa 2024</p>
+        <script>
+            function Switcher(imageId, images) {
+                let Index = 0;
+                const imgElement = document.getElementById(imageId);
+                setInterval(() => {
+                    Index = (Index + 1) % images.length;
+                    imgElement.src = images[Index];
+                }, 5000);
+            }
+
+            window.onload = function() {
+                Switcher('anais-img', ['anais.png', 'anais2.png', 'anais3.png']);
+                Switcher('rabbit-img', ['rabbit.png', 'rabbit2.png', 'rabbit33.png']);
+                Switcher('cat-img', ['cat.png', 'cat2.png', 'cat3.png']);
+                Switcher('darwin-img', ['darwin.png', 'darwin2.png', 'darwin3.png']);
+                Switcher('mum-img', ['mum.png', 'mum2.png', 'mum3.png']);
+            };
+        </script>
+    </footer>
+</body>
+</html>
