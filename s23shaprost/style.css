@@ -1,0 +1,205 @@
+:root {
+    --text-main: #212121;
+    --text-accent: #e36414;
+    --bg-light: #f5f5f5;
+    --bg-dark: #333;
+    --font-heading: 'Arial', sans-serif;
+    --font-body: 'Verdana', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-light);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(135deg, #007b4d 0%, #002e1e 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header .lead {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+}
+
+header .sub {
+    font-size: 1.2rem;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+header .project-info {
+    margin-top: 1rem;
+    background-color: #007b4d;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-family: var(--font-body);
+}
+
+header .project-info p {
+    margin: 0.2rem 0;
+}
+
+nav {
+    background-color: var(--bg-dark);
+    color: white;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem; 
+}
+
+nav ul li {
+    display: inline;
+    position: relative;
+}
+
+nav ul li:not(:last-child)::after {
+    content: " 🚗"; 
+    position: absolute;
+    right: -1.5rem; 
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+nav ul li a {
+    color: var(--text-accent);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--text-accent);
+}
+
+main section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+main section img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+main section p {
+    text-align: justify;
+    margin-top: 0.5rem;
+}
+
+footer {
+    background-color: var(--bg-dark);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 2rem;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #fafafa;
+}
+
+
+@media screen and (max-width: 768px) {
+    header .lead {
+        font-size: 1.8rem;
+    }
+
+    header .sub {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    main section {
+        padding: 0.5rem;
+    }
+
+    main section h3 {
+        font-size: 1.2rem;
+    }
+
+    table th,
+    table td {
+        padding: 0.5rem;
+    }
+}
